@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ECEEF1;
+};
+
+.brd {
+  border: 1px solid red;
+}

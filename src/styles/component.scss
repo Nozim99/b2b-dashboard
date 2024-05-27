@@ -1,0 +1,49 @@
+@use "mixins" as *;
+
+.main-title {
+  @apply font-bold text-xl;
+}
+
+.item-center {
+  @include item-center;
+}
+
+.apexcharts-yaxis {
+  display: none;
+}
+
+.show {
+  opacity: 0;
+  scale: 0.3;
+  animation: show 500ms ease-out forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 0.3;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.slowShow {
+  opacity: 0;
+  scale: 0.8;
+  animation: slowShow 700ms ease-out forwards;
+}
+
+@keyframes slowShow {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
